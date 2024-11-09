@@ -1,0 +1,75 @@
+.footer {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: #f2c4d294;
+    justify-content: space-between;
+    gap: 50px;
+
+    .textContainer {
+        flex-direction: column;
+        padding-left: 20%;
+    }
+}
+
+.formContainer {
+    flex: 1;
+    padding-left: 100px;
+    position: relative;
+    margin-top: 11%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input,
+textarea {
+    padding: 20px;
+    background-color: white;
+    opacity: 1;
+    border: 1px solid white;
+    color: black;
+    border-radius: 5px;
+}
+
+.fancy_button {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    background-color: #370569;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.fancy_button:active {
+    transform: scale(0.96);
+}
+
+.fancy_button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #370569;
+    z-index: -1;
+    left: 100%;
+    width: 0;
+    transition: 0.3s;
+}
+
+.fancy_button {
+    color: white;
+}
+.fancy_button:hover::before {
+    left: 0;
+    width: 100%;
+    transition: width 0.3s;
+}
