@@ -8,11 +8,7 @@ export const About = () => {
                 About
             </h1>
             <div className={styles.about_container}>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p>I'm a web development enthusiast with a growing expertise in React, passionate about creating dynamic, user-friendly applications. I focus on leveraging React’s powerful component architecture and state management to build seamless, engaging user experiences. I'm always exploring new tools and techniques to bring fresh ideas to life, constantly learning and refining my skills to deliver clean, impactful solutions.
                 </p>
             </div>
         </section>

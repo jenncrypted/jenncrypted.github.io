@@ -2,18 +2,25 @@
 import styles from './Hero.module.css';
 import ExperienceImage from './image.png';
 import memoji from './memoji.png';
+import { motion } from 'framer-motion';
+
 
 export const Hero = () => {
     return (
         <section className={styles.Hero}>
             <div className={styles.content}>
-                <div className={styles.memoji_container}>
+                <motion.div className={styles.memoji_container}
+                initial={{ scale: 0.5, opacity: 0 }}
+  animate={{ scale: 1, opacity: 1 }}
+  transition={{ duration: 1, ease: 'easeOut' }}>
+
                     <img className={styles.memoji} src={memoji} alt='memoji'></img>
-                </div>
+                </motion.div>
+
                 <h1>WELCOME</h1>
                 <h2 className={styles.title}>Jennifer's Portfolio</h2>
                 <h3>
-                    <em>Front-end Developer</em>
+                    Frontend Developer
                 </h3>
                 <div>
                     <div className={styles.email_button}>

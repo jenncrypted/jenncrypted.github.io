@@ -5,7 +5,7 @@ export const Footer = () => {
         <div className={styles.footerContainer}>
             <div className={styles.innerHeightRestrictedContainer}>
                 <div id='contact' className={styles.textContainer}>
-                    <h1>Let’s keep in touch!</h1>
+                    <h1>Let’s work together!</h1>
                     <h2>jenniferpaz11@hotmail.com</h2>
                 </div>
                 <Contact></Contact>
