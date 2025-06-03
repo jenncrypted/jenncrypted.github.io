@@ -1,36 +1,41 @@
 @import '../../vars.css';
 
 .container {
-    margin-top: 100px;
-    color: var(--color-text);
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.project_container {
-    padding: 2%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  margin: 100px auto;
+  max-width: 1000px; 
+  color: #1d1d1f;
+  text-align: center; 
 }
 
 .title {
-    font-size: 2em;
-    font-weight: 700;
-    color: #370569;
-    text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 60px;
+  color: rgb(122, 29, 29);
 }
 
-.projects {
-    margin-top: 37px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  column-gap: 8px;
+  justify-items: center; 
+  max-width: 800px; 
+  margin: 0 auto; 
 }
 
-.links {
-    flex-wrap: wrap;
+.projectCard {
+  width: 100%; 
+  max-width: 380px; 
+}
+
+@media screen and (max-width: 768px) {
+  .project_container {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .projectCard {
+    max-width: 100%;
+  }
 }

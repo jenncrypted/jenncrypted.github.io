@@ -1,0 +1,85 @@
+/* src/Components/Projects/ProjectModal.module.css */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background: white;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.title {
+  margin: 20px;
+  text-align: center;
+}
+
+.description {
+  color: black;
+}
+
+
+.links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.link_demo:hover {
+  background-color: #f2c4d2;
+  color: white;
+  transition: background-color 0.8s ease;
+}
+
+.link_GitHub:hover {
+  background-color: #f2c4d2;
+  color: white;
+  transition: background-color 0.8s ease;
+}
+
+
+.links a {
+  text-decoration: none;
+  background: rgb(122, 29, 29);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -13,13 +13,42 @@
 }
 
 .Hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    z-index: 1;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
 }
+
+@keyframes pulseGlow {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.glow {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.05) 80%,
+    transparent 100%
+  );
+  border-radius: 50%;
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+  animation: pulseGlow 6s ease-in-out infinite;
+}
+
 
 .content {
     flex-direction: column;
@@ -30,7 +59,7 @@
 }
 
 .content > h1 {
-    padding-top: 10%;
+    padding-top: 5%;
     font-weight: bold;
     font-size: 23px;
     font-weight: 600;
@@ -42,14 +71,13 @@
 
 .title {
     font-size: medium;
-    padding-top: 2%;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2em;
 }
 
 h3 {
     padding: 10px;
-    color: rgb(164, 7, 216);
+    color: rgb(122, 29, 29);
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 30px;
@@ -61,6 +89,7 @@ h3 {
     margin-left: 20px;
     margin-top: 20px;
     position: relative;
+    font-size: 17px;
 }
 
 .email_button::after {
@@ -82,10 +111,14 @@ h3 {
     padding: 1em;
     color:black;
      background-color: white;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+     backdrop-filter: blur(20px); 
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .email_button a:hover {
-    color: rgb(164, 7, 216);
+    color: rgb(122, 29, 29);
     background-color: white;
 }
 
@@ -95,6 +128,7 @@ h3 {
     text-align: justify;
     padding-top: 2px;
     margin-top: 20px;
+    font-size: 17px;
 }
 
 .cv_button > a {
@@ -104,11 +138,15 @@ h3 {
     padding: 1em;
      color:black;
      background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(20px); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .cv_button a:hover {
-   color: rgb(164, 7, 216);
-    background-color: rgba(255, 255, 255, 0.674);
+   color: rgb(122, 29, 29);
+    background-color: white;
     border: solid 1px rgba(0, 0, 0, 0);
 }
 

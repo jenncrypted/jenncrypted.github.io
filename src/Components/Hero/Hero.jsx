@@ -3,11 +3,16 @@ import styles from './Hero.module.css';
 import ExperienceImage from './image.png';
 import memoji from './memoji.png';
 import { motion } from 'framer-motion';
+import { FaGithub, FaFileAlt } from 'react-icons/fa';
 
 
 export const Hero = () => {
     return (
         <section className={styles.Hero}>
+       <div className={styles.glow}>
+  <div className={styles.glow} style={{ top: '10%', left: '15%' }} />
+  <div className={styles.glow} style={{ top: '50%', left: '70%' }} />
+</div>
             <div className={styles.content}>
                 <motion.div className={styles.memoji_container}
                 initial={{ scale: 0.5, opacity: 0 }}
@@ -16,7 +21,6 @@ export const Hero = () => {
 
                     <img className={styles.memoji} src={memoji} alt='memoji'></img>
                 </motion.div>
-
                 <h1>WELCOME</h1>
                 <h2 className={styles.title}>Jennifer's Portfolio</h2>
                 <h3>
@@ -24,15 +28,16 @@ export const Hero = () => {
                 </h3>
                 <div>
                     <div className={styles.email_button}>
-                        <a href='mailto:jenniferpaz11@hotmail.com' target='_blank'>
-                            Get in touch
-                        </a>
+                       <a href="https://github.com/jenncrypted" target="_blank" rel="noreferrer">
+                        <FaGithub className={styles.icon} title="GitHub" />
+                    </a>
                     </div>
                     <div className={styles.cv_button}>
-                        <a href='/'>Download CV</a>
+                        <a href="/jenncrypted.github.io/cv-JenniferPaz.pdf" target="_blank" rel="noopener noreferrer">
+                        <FaFileAlt className={styles.icon} title="Download CV" />
+                    </a>
                     </div>
                 </div>
-
                 <section>
                     <h2 className={styles.experience}>
                         <strong>EXPERIENCE WITH</strong>

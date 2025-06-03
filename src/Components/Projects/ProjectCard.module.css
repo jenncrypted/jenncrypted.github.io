@@ -1,85 +1,109 @@
 @import '../../vars.css';
 
 .project_card_container {
-    display: flex;
-    flex-direction: column;
-    border-radius: 25px;
-    background: #16094b61;
-    margin: 2%;
-    overflow: auto;
-    height: 250px;
-    max-width: 250px;
-    object-fit: center;
-    object-position: center;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
-    /* width; */
+  background: #fefefe;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 16px;
+  max-width: 260px; 
+  height: 240px;  
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s ease; 
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  overflow: hidden;
 }
-/* 
+
 .project_card_container:hover {
-    -webkit-transition: opacity 0.5s;
-    transition: opacity 0.5s;
-} */
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08); 
+}
+
+.imageSrc {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
 
 .title {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-    color: rgb(51, 41, 106);
-    align-content: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: #1d1d1f;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.skills li {
+  background-color: #f0f0f5;
+  color: #1d1d1f;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.clickMessage {
+  font-size: 1rem;
+  color: rgb(122, 29, 29);
+  margin-top: 20px;
+}
+
+.clickMessage:hover {
+  color: rgb(219, 50, 50);
 }
 
 .description {
-    color: whitesmoke;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 5% 10%;
-    max-width: 450px;
-    margin: 0 auto;
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
+
+.skills {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  margin: 2%;
+  color: rgb(122, 29, 29);
+}
+
+.skills li {
+  background-color: #f3f3f3;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+}
+
 
 .links {
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    font-weight: 100%;
-    padding: 0.5em 1em;
-    cursor: pointer;
+    gap: 10px;
+    margin-bottom: 1rem;
 }
 
-.links:hover {
-    filter: brightness(130%);
-}
-
-.link_demo {
-    flex-direction: row;
-    width: 35%;
-    padding: 1px;
-    background-color: transparent;
-    border: 1px solid #16094b61;
-    border-radius: 50px;
-    text-align: center;
+.link_demo,
+.link_GitHub {
     text-decoration: none;
-    font-size: 15px;
-    padding: 0.5em 1em;
-    border: none;
-    background-color: white;
-    color: rgb(51, 41, 106);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 14px;
+    background-color:rgb(122, 29, 29);
+    color: white;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
 }
 
-.link_source {
-    flex-direction: row;
-    width: 35%;
-    padding: 1px;
-    background-color: transparent;
-    border: 1px solid #16094b61;
-    border-radius: 50px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 15px;
-    padding: 0.5em 1em;
-    border: none;
-    background-color: white;
-    color: rgb(51, 41, 106);
+.link_demo:hover,
+.link_GitHub:hover {
+    background-color: #f2c4d294;
+    color: rgb(122, 29, 29);
 }
+

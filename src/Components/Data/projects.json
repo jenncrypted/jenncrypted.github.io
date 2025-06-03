@@ -1,26 +1,35 @@
 [
     {
         "title": "Crypto Marketplace",
-        "imageSrc": "projects/logoCrypto.png",
-        "description": "This is a project made to learn the latest languages by building an app.",
-        "skills": ["React", "Express", "Node"],
+        "imageSrc": "projects/CryptoPlace.png",
+        "description": "Crypto Marketplace is a React-based web app that displays real time cryptocurrency data. Users can browse, search, and view key info in a clean, responsive interface. It showcases API integration and dynamic UI handling with React.",
+        "skills": ["JavaScript", "CSS modules", "React Hooks"],
         "demo": "https://www.example.com",
-        "source": "https://www.github.com"
+        "GitHub": "https://github.com/jenncrypted/crypto-place"
     },
     {
         "title": "Weather App",
         "imageSrc": "projects/weatherApp.png",
-        "description": "This is a project made to learn the latest languages by building an app.",
-        "skills": ["React", "Express", "Node", "Sass"],
+        "description": "I created this Weather App using React. It fetches real time weather data from an API and displays it in a simple, responsive UI. This project helped me practice API integration, state management, and modern front-end tools.",
+        "skills": ["JavaScript",  "API Integration", "CSS modules"],
         "demo": "https://www.example.com",
-        "source": "https://www.github.com"
+        "GitHub": "https://github.com/jenncrypted/weather-app-component"
     },
     {
-        "title": "Ecommerce",
+        "title": "E-commerce Platform",
         "imageSrc": "projects/ecommerce.png",
-        "description": "This is a project made to learn the latest languages by building an app.",
-        "skills": ["React", "Express", "Node"],
+        "description": "E-Commerce Platform is a React based web application designed for browsing, adding, and purchasing products online. It features a modern UI, dynamic product listings, and smooth cart management",
+        "skills": ["JavaScript", "CSS modules", "React Router"],
         "demo": "https://www.example.com",
-        "source": "https://www.github.com"
+        "GitHub": "https://github.com/jenncrypted/e-commerce-site"
+    },
+    {
+        "title": "Personal Portfolio",
+        "imageSrc": "projects/portfolio.png",
+        "description": "A responsive and modern portfolio website built with React.js to showcase my projects, skills, and contact information. It features smooth animations, reusable components, and clean code structure.",
+        "skills": ["JavaScript", "CSS modules", "React Router"],
+        "demo": "https://www.example.com",
+        "GitHub": "https://github.com/jenncrypted/kamensec.github.io"
     }
+
 ]

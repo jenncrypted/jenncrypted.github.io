@@ -14,20 +14,38 @@
 }
 
 .textContainer {
-    font-size: x-small;
+    color: rgb(122, 29, 29);
+    font-size: 12px;
+   
 }
 
 .textContainer > h1 {
+    font-weight: 350;
     font-size: 2em;
-    color: #370569;
+    color: rgb(122, 29, 29);
     line-height: 100px;
     text-align: center;
 }
 
 .textContainer > h2 {
+    font-weight: 350;
     font-size: 1.5em;
     margin: auto;
-    color: #370569;
+    color: black;
     font-style: normal;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .textContainer,
+  .formContainer {
+    padding: 0;
+  }
 }
